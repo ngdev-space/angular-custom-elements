@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+    <h2>Hello {{name}}!</h2>
+    <my-hello-getter-setter [name]="name"></my-hello-getter-setter>
+    <my-hello-attribute [attr.name]="name" static="Hello"></my-hello-attribute>
+    <my-hello-element [attr.name]="name"></my-hello-element>
+    <my-hello-emitter (test)="customClick($event);"></my-hello-emitter>
+    {{emitterText}}
+</div>
